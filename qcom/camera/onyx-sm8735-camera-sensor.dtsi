@@ -225,7 +225,7 @@
 		};
 	};
 
-	cam_sensor_mclk1_active: cam_sensor_mclk1_active {
+	onyx_cam_sensor_mclk1_active: cam_sensor_mclk1_active {
 	/* MCLK1 */
 		mux {
 			pins = "gpio65";
@@ -238,7 +238,7 @@
 			drive-strength = <4>; /* 2 MA */
 		};
 	};
-	cam_sensor_mclk1_suspend: cam_sensor_mclk1_suspend {
+	onyx_cam_sensor_mclk1_suspend: cam_sensor_mclk1_suspend {
 	/* MCLK1 */
 		mux {
 			pins = "gpio65";
@@ -421,9 +421,9 @@
 		rgltr-load-current = <200 150000 0  30000 2000000>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
-		pinctrl-0 = <&cam_sensor_mclk1_active
+		pinctrl-0 = <&onyx_cam_sensor_mclk1_active
 					&cam_sensor_active_rst1>;
-		pinctrl-1 = <&cam_sensor_mclk1_suspend
+		pinctrl-1 = <&onyx_cam_sensor_mclk1_suspend
 					&cam_sensor_suspend_rst1>;
 		gpios = <&tlmm 65 0>, <&tlmm 28 0>;
 		gpio-reset = <1>;
@@ -461,9 +461,9 @@
 		rgltr-load-current = <200 150000 0 30000 2000000>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
-		pinctrl-0 = <&cam_sensor_mclk1_active
+		pinctrl-0 = <&onyx_cam_sensor_mclk1_active
 					&cam_sensor_active_rst1>;
-		pinctrl-1 = <&cam_sensor_mclk1_suspend
+		pinctrl-1 = <&onyx_cam_sensor_mclk1_suspend
 					&cam_sensor_suspend_rst1>;
 		gpios = <&tlmm 65 0>, <&tlmm 28 0>;
 		gpio-reset = <1>;
