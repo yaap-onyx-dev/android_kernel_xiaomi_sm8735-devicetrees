@@ -16,5 +16,4 @@ dtbo-$(CONFIG_ARCH_KERA)  += kera-camera.dtbo
 dtbo-$(CONFIG_ARCH_KERA)  += kera-camera-sensor-mtp.dtbo \
 				kera-camera-sensor-cdp.dtbo \
 				kera-camera-sensor-qrd.dtbo \
-				kera-camera-sensor-rcm.dtbo \
-				kera-camera-sensor-idp.dtbo
+				kera-camera-sensor-rcm.dtbo
